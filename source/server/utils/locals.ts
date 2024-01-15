@@ -3,7 +3,7 @@ import { NextFunction, Request, RequestHandler, Response } from "express";
 import {basename, dirname} from "path";
 import User, { SafeUser } from "../auth/User.js";
 import UserManager, { AccessType, AccessTypes } from "../auth/UserManager.js";
-import Vfs, { GetFileParams } from "../vfs/index.js";
+import Vfs, { GetFileParams, GetSceneParams } from "../vfs/index.js";
 import { BadRequestError, ForbiddenError, HTTPError, InternalError, NotFoundError, UnauthorizedError } from "./errors.js";
 import Templates from "./templates.js";
 
@@ -136,12 +136,21 @@ export function getUserId(req :Request){
   return getUser(req).uid;
 }
 
+export function getSceneParams(req :Request) :GetSceneParams{
+  const {scene:sceneSlug} = req.params;
+  if(!sceneSlug) throw new BadRequestError(`Scene parameter not provided`);
+  const [scene, revision] = sceneSlug.split("$");
+  if(revision && !/^(?:file|document)\.\d+$/.test(revision)) throw new BadRequestError(`Invalid revision parameter "${revision}"`);
+  return {scene, revision};
+}
+
 export function getFileParams(req :Request):GetFileParams{
-  let {scene, name} = req.params;
+  const {scene, revision} = getSceneParams(req);
+  let {name} = req.params;
   if(!scene) throw new BadRequestError(`Scene parameter not provided`);
   if(!name) throw new BadRequestError(`File parameter not provided`);
 
-  return {scene, name};
+  return {scene, revision, name};
 }
 
 export function getVfs(req :Request){

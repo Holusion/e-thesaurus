@@ -102,6 +102,17 @@ describe("Vfs", function(){
           Uid.make = old;
         }
       });
+
+      it("requires valid names", async function(){
+        await Promise.all(([
+          [null, "Scene name must be a string. Received \"object\""],
+          ["", "Scene name cannot be empty"],
+          ["a".repeat(255), "Scene name is too long (max 254 bytes)"],
+          ["$", "Scene name cannot contain '$'"],
+        ] as Array<[string, string]>).map(async ([name, error])=>{
+          await expect(vfs.createScene(name)).to.be.rejectedWith(error);
+        }));
+      })
     });
 
     describe("getScenes()", function(){

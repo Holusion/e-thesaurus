@@ -1,7 +1,7 @@
 import express, { Express, NextFunction, Request, RequestHandler, Response } from "express";
 import request from "supertest";
 import { InternalError, UnauthorizedError } from "./errors.js";
-import { either } from "./locals.js";
+import { either, getSceneParams } from "./locals.js";
 
 //Dummy middlewares
 function pass(req :Request, res :Response, next :NextFunction){
@@ -53,3 +53,10 @@ describe("either() middleware", function(){
     await request(app).get("/").expect(401);
   });
 });
+
+describe("getSceneParams()", function(){
+
+  it("parses a request's scene parameter", function(){
+    expect(getSceneParams({params:{scene:"foo"}} as any)).to.deep.equal({scene:"foo", revision: undefined});
+  })
+})

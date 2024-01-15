@@ -9,10 +9,25 @@ import { ItemEntry, Scene, SceneQuery } from "./types.js";
 
 export default abstract class ScenesVfs extends BaseVfs{
 
+  /**
+   * Create a new scene
+   * Will check if name is a valid scene name. ie:
+   * - not empty
+   * - not too long (< 255 bytes)
+   * - not containing a "$" (reserved for generation selection)
+   */
   async createScene(name :string):Promise<number>
   async createScene(name :string, author_id :number):Promise<number>
   async createScene(name :string, permissions:Record<string,AccessType>):Promise<number>
   async createScene(name :string, perms ?:Record<string,AccessType>|number) :Promise<number>{
+
+    //Check name validity
+    if(typeof name !== "string") throw new BadRequestError(`Scene name must be a string. Received "${typeof name}"`);
+    if(name.length == 0) throw new BadRequestError("Scene name cannot be empty");
+    if(Buffer.byteLength(name) >= 255) throw new BadRequestError("Scene name is too long (max 254 bytes)");
+    if(name.includes("$")) throw new BadRequestError("Scene name cannot contain '$'");
+
+
     let permissions :Record<string,AccessType> = (typeof perms === "object")? perms : {};
     //Always provide permissions for default user
     permissions['0'] ??= (config.public?"read":"none");

@@ -11,8 +11,11 @@ import { ItemEntry } from "../../../../../../vfs/index.js";
  * What is "before" or "after" is defined by the reverse of what is returned by `GET /api/v1/scenes/:scene/history`
  * That is the algorithm will remove everything in indices :
  *  history[0] .. history[indexOf(:id)]
+ * 
+ * It uses a file's name and generation or id and type to find the point to restore to.
  *  
- * @see {getSceneHistory} 
+ * @see {@link getSceneHistory} for content ordering
+ * @see {@link getScene} for another example
  */
 export async function postSceneHistory(req :Request, res :Response){
   let requester = getUser(req);

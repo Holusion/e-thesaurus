@@ -6,11 +6,13 @@ import { AccessType } from "../auth/UserManager.js";
 
 export type DataStream = ReadStream|AsyncGenerator<Buffer|Uint8Array>|Request;
 
-
-
-export interface GetFileParams {
+export interface GetSceneParams {
   /** Scene name or scene id */
   scene :string|number;
+  revision ?:string;
+}
+
+export interface GetFileParams extends GetSceneParams{
   name  :string;
   /**Also return deleted files */
   archive ?:boolean;
