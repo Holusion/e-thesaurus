@@ -92,3 +92,23 @@ export interface Tag{
   name :string;
   size :number;
 }
+
+export interface SceneHistoryAggregate{
+  start: Date;
+  end: Date;
+  /** 
+   * Unique `name` of the file this version ends at
+   * This is the thing we'd want to jump to if restoring this version
+   */
+  refName: string;
+  /** 
+   * Unique `generation` of the file this version ends at
+   * This is the thing we'd want to jump to if restoring this version
+   */
+  refGeneration: number;
+
+  /** Names of the files that were changed within this version */
+  changes: Set<string>;
+  /** Authors */
+  authors: Set<string>;
+}

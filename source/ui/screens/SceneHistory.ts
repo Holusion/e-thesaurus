@@ -330,26 +330,6 @@ class SceneVersion{
         <div class="list-items">
           ${this.versions.map((v, index)=>{
 
-            let name = (3 < v.names.size)? html`${v.names.values().next().value} <span style="text-decoration:underline; cursor:pointer" @click=${(e)=>e.target.parentNode.classList.toggle("visible")}>${this.t("info.etAl", {count:v.names.size})}</span>`
-              : [...v.names.values()].join(", ");
-
-            let authors = [...v.authors.values()].join(", ")
-
-            return html`
-              <div class="list-item" name="${name}">
-                <div style="flex: 1 0 6rem;overflow: hidden;text-overflow: ellipsis">
-                  <div class="tooltip" style="margin-bottom:5px" >${name}
-                    <div><ul style="opacity:0.7">${[...v.entries].map((n, index)=>{
-                      return html`<li>${n.name} ${n.mime != "text/directory"? html`(${n.size?html`<b-size b=${n.size}></b-size>`:"DELETED"})`:null}</li>`
-                    })}</ul></div>
-                  </div>
-                  
-                  <div style=""><b>${authors}</b> <span style="opacity:0.6; font-size: smaller">${new Date(v.start).toLocaleString(this.language)}</span></div>
-                </div>
-
-                ${index==0?html`<ui-button disabled transparent text="active">active</ui-button>`:html`<ui-button class="btn-main" style="flex:initial; height:fit-content;" title="restore" @click=${()=>this.onRestore(v.entries.slice(-1)[0])} text="restore" icon="restore"></ui-button>`}
-              </div>
-            `
           })}
         </div>
         `

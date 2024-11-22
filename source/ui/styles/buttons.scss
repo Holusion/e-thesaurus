@@ -119,3 +119,20 @@ a{
     }
   }
 }
+
+.caret{
+  &::before{
+    content: "⌄";
+    display: inline;
+    line-height: 75%;
+    vertical-align: top;
+  }
+
+  .visible &::before,
+  .active &::before, 
+  &.active::before
+  {
+    content: "⌃";
+    vertical-align: bottom;
+  }
+}

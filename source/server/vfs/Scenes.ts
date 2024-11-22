@@ -3,7 +3,7 @@ import config from "../utils/config.js";
 import { BadRequestError, ConflictError,  NotFoundError } from "../utils/errors.js";
 import { Uid } from "../utils/uid.js";
 import BaseVfs from "./Base.js";
-import { ItemEntry, Scene, SceneQuery } from "./types.js";
+import { ItemEntry, Scene, SceneHistoryAggregate, SceneQuery, Stored } from "./types.js";
 
 
 export default abstract class ScenesVfs extends BaseVfs{
@@ -301,11 +301,27 @@ export default abstract class ScenesVfs extends BaseVfs{
    * Return order is **DESCENDING** over ctime, name, generation (so, new files first).
    * 
    * @warning It doesn't have any of the filters `listFiles` has.
-   * @todo handle size limit and pagination
+   * @warning doesn't handle size limit and pagination. Might get deprecated in the future because it seems hard to expand on this design.
    * @see listFiles for a list of current files.
    */
-  async getSceneHistory(id :number) :Promise<Array<ItemEntry>>{
-    let entries = await this.db.all(`
+  async getSceneHistory(id :number) :Promise<Array<SceneHistoryAggregate>>{
+    let entries :SceneHistoryAggregate[]= [];
+    let entry :SceneHistoryAggregate;
+
+    //Aggregate utilities
+    function beginNewAggregate(item:Stored<ItemEntry>){
+      entries.push(entry = {
+        start: BaseVfs.toDate(item.ctime),
+        end: BaseVfs.toDate(item.ctime),
+        refName: item.name,
+        refGeneration: item.generation,
+        changes: new Set([item.name]),
+        authors: new Set([item.author]),
+      });
+    }
+
+
+    await this.db.each<Stored<ItemEntry>>(`
       SELECT name, mime, id, generation, ctime, username AS author, author_id, size
       FROM(
         SELECT 
@@ -332,12 +348,12 @@ export default abstract class ScenesVfs extends BaseVfs{
       )
       INNER JOIN users ON author_id = user_id
       ORDER BY ctime DESC, name DESC, generation DESC
-    `, {$scene: id});
+    `, {$scene: id}, (err, item)=>{
+      if (err) { throw err }// row-specific error, unlikely, but we should abort
+      if(!entry || entry.changes.has(item.name)) beginNewAggregate(item);
+    });
+    return entries;
 
-    return entries.map(m=>({
-      ...m,
-      ctime: BaseVfs.toDate(m.ctime),
-    }));
   }
 
 }
