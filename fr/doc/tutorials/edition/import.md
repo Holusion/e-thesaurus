@@ -5,9 +5,9 @@ rank: 3
 
 ## Prise en main d'eCorpus
 
-eCorpus est un logiciel libre permettant de conserver, annoter et diffuser des modèles 3D. Cet ensemble de tutoriel a pour but de vous permettre de découvrir les fonctionnalités d'eCorpus en tant qu'utilisateur, éditeur et administrateur.
+eCorpus est un **logiciel libre** permettant de conserver, annoter et diffuser des modèles 3D. Cet ensemble de tutoriel a pour but de vous permettre de **découvrir les fonctionnalités d'eCorpus** en tant qu'utilisateur, éditeur et administrateur.
 
-eCorpus utilise le visualisateur 3D DPO-Voyager.
+* eCorpus utilise le visualisateur 3D <a href="https://smithsonian.github.io/dpo-voyager/">**DPO-Voyager**</a>.
 
 
 ## Découverte d'une scène eCorpus
@@ -16,13 +16,16 @@ eCorpus utilise le visualisateur 3D DPO-Voyager.
 
 ## Préparation d'une scène eCorpus
 
+### Découvrir les options de gestion de scène
+
 Après avoir chargé votre modèle 3D, préparer vos collaborateurs d'édition, la langue de votre projet, la licence et les informations clés comme l'auteur, le site où l'oeuvre est conservée, la date de réalisation...
 
-<img src="/assets/img/doc/SceneCreation_02.jpg" width ="800" alt="illustration importation" />
+<img src="/assets/img/doc/SceneCreation_01.jpg" width ="800" alt="illustration importation" />
 \
-Le modèle apparait directement dans l'onglet "Mes Scènes" une fois son importation terminé. Par défaut, votre scène portera le nom du fichier importé, et arborera une miniature par défaut représentant un cube en fil de fer. 
-Vous remarquerez 3 boutons cliquables en dessous de votre scène. 
-### Le bouton "Aperçu" 
+Le modèle apparait directement dans l'onglet "**Mes Scènes**" une fois son importation terminé. Par défaut, votre scène arborera une miniature par défaut représentant un cube en fil de fer. 
+Vous remarquerez **2 boutons cliquables** en dessous de votre scène. 
+
+#### Le bouton "Aperçu" 
 <img src="/assets/img/doc/SceneCreation_03.jpg" alt="illustration importation" width ="200" />
 \
 Il sert uniquement à visualiser votre scène 3D.
