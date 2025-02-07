@@ -71,7 +71,7 @@ Les modèles utilisent un système de PBR (*Physically Based Rendering*) permett
 
 Vous pouvez utiliser [ce modèle au format .glb](/assets/3d/DamagedHelmet.glb).
 
-<img src="/assets/img/doc/DamagedHelmet_Preview.jpg" width="35%" alt="Prévisualisation du modèle de Test" />
+[<img src="/assets/img/doc/DamagedHelmet_Preview.jpg" width="35%" alt="Prévisualisation du modèle de Test" />](/assets/3d/DamagedHelmet.glb)
 
 Vous n'avez pas de compte eCorpus ? Pas de soucis ! Le mode Stand Alone vous permet de tester vos modèles 3D sans avoir de compte sur une base eCorpus : 
 
@@ -123,7 +123,7 @@ Tapez le nom du format à importer dans la barre de recherche. Il vous suffit en
 ### A partir d'un logiciel de CAO en STL
 
 #### Le STL (stéréolithographie) 
-est un format de fichiers 3D principalement destiné à **l'impression 3D**. Elle ne **comporte pas d'information de couleur ou de texture** comme elle ne sert pas dans ce contexte.
+Un format de fichiers 3D principalement destiné à **l'impression 3D**. Elle ne **comporte pas d'information de couleur ou de texture** comme elle ne sert pas dans ce contexte.
 
 Les STL sont facilement généré par les logiciels de <span style="text-decoration: underline dotted; cursor: help;" title="Conception Assisté par Ordinateur">**CAO**</span> tel que SolidWorks, AutoCAD ou FreeCAD.
 
@@ -139,15 +139,17 @@ Les STL sont facilement généré par les logiciels de <span style="text-decorat
 |Metadonnées| Non|
 
 #### A Noter 
-Il vous ait possible d'ajouter des informations de matériau basique via l'édition d'objets de eCorpus. Un tutoriel sur ce sujet sera bientôt disponible.
+* Il vous ait possible d'ajouter des informations de matériau basique via l'édition d'objets de eCorpus. Un tutoriel sur ce sujet sera bientôt disponible.
 
-Un tutoriel avancé sur l'édition de modèles 3D sur Blender sera également bientôt disponible.
+* Un tutoriel avancé sur l'édition de modèles 3D sur Blender sera également bientôt disponible.
+
+* Le format .STL est un <span style="text-decoration: underline dotted; cursor: help;" title="Son code ne peut-être lu qu'avec un logiciel compatible">**format proprietaire**</span>. Il est donc déconseillé d'avoir recourt à ce format.
 
 
 ### A partir d'une numérisation 3D en OBJ
 
 #### Le Wavefront (OBJ)
-est un format de fichiers 3D **le plus couramment utilisé** lors de partage de modélisation 3D. Largement reconnu par la plupart des logiciels d'édition 3D, il est utilisé pour des usages tels que l'impression 3D, le rendu architectiral et la réalité virtuelle.
+Un format de fichiers 3D **le plus couramment utilisé** lors de partage de modélisation 3D. Largement reconnu par la plupart des logiciels d'édition 3D, il est utilisé pour des usages tels que l'impression 3D, le rendu architectiral et la réalité virtuelle.
 
 Ce format simple permet de stocker de nombreuses informations de données. Il est souvent associé à un **fichier complémentaire** de métadonnées (.mtl).
 Cependant, toutes les applications ne lisent pas les OBJ de la même façon. De légères différences avec le fichier original peuvent donc apparaitre lors de l'importation. Heureusement, ces problèmes peuvent être aisement corrigés.
@@ -166,19 +168,23 @@ De part cette **contrainte de compatibilité**, il est recommandé de garder les
 |Metadonnées| Oui|
 
 #### A Noter 
-Il vous ait possible d'ajouter des informations de matériau basique via l'édition d'objets de eCorpus. Un tutoriel sur ce sujet sera bientôt disponible.
+* Il vous ait possible d'ajouter des informations de matériau basique via l'édition d'objets de eCorpus. Un tutoriel sur ce sujet sera bientôt disponible.
 
-Un tutoriel avancé sur l'édition de modèles 3D sur Blender sera également bientôt disponible.
+* Un tutoriel avancé sur l'édition de modèles 3D sur Blender sera également bientôt disponible.
+
+* Le format .OBJ est un <span style="text-decoration: underline dotted; cursor: help;" title="Son code est lisible et reconnaissable par l'être humain">**format libre**</span>.
 
 
 ### A partir d'un format PLY
 
 #### Le Standfort File Format (PLY)
-egalement appelé **P**o**ly**gon, est un format de fichiers 3D utilisés le plus fréquemment par les **scanners 3D** en tant que nuage de points, ou objet 3D. Il permet de stocker de nombreuses informations, telles que la couleur et la texture d'un objet.
+Egalement appelé **P**o**ly**gon, est un format de fichiers 3D utilisés le plus fréquemment par les **scanners 3D** en tant que nuage de points, ou objet 3D. Il permet de stocker de nombreuses informations, telles que la couleur et la texture d'un objet.
 
 Il est fréquemment utilisé pour l'impression 3D et de la représentation réaliste des objets.
 
-Les fichiers .PLY contiennent des informations de couleurs d'un objet, néanmoins, celles-ci ne sont pas forcément présentes sous forme de texture. Si la couleur de votre objet 3D est affichée en tant que Vertex Color, il sera nécessaire de réaliser un baking de texture afin de pouvoir les exporter en format .GLB.
+* Les fichiers .PLY contiennent des informations de couleurs d'un objet, néanmoins, celles-ci ne sont pas forcément présentes sous forme de texture. Si la couleur de votre objet 3D est affichée en tant que Vertex Color, il sera nécessaire de réaliser un baking de texture afin de pouvoir les exporter en format .GLB.
+
+* Les fichiers .PLY sont susceptibles de contenir des nuages de points. Or, seuls les maillages 3D peuvent être exporter sous format .GLB, et donc importés dans eCorpus.
 
 #### Caractéristiques détaillées de format .PLY
 
@@ -190,19 +196,23 @@ Les fichiers .PLY contiennent des informations de couleurs d'un objet, néanmoin
 |Metadonnées| Oui|
 
 #### A Noter 
-Il vous ait possible d'ajouter des informations de matériau basique via l'édition d'objets de eCorpus. Un tutoriel sur ce sujet sera bientôt disponible.
+* Il vous ait possible d'ajouter des informations de matériau basique via l'édition d'objets de eCorpus. Un tutoriel sur ce sujet sera bientôt disponible.
 
-Un tutoriel avancé sur l'édition de modèles 3D sur Blender sera également bientôt disponible.
+* Un tutoriel avancé sur l'édition de modèles 3D sur Blender sera également bientôt disponible.
+
+* Un tutoriel avancé sur la conversion de nuages de points en maillage 3D devrait voir le jour sous peu.
+
+* Le format .PLY est un <span style="text-decoration: underline dotted; cursor: help;" title="Son code est lisible et reconnaissable par l'être humain">**format libre**</span>.
 
 
 ### A partir d'un format FBX
 
 #### Le FilmBox (FBX)
-est un format de fichiers 3D utilisés le plus fréquement pour des éléments graphiques de **jeu vidéo et d'effets spéciaux**. Il permet le stockage d'un grand nombre de données, telles que la texture et l'armature animable (rig) d'un objet.
+Un format de fichiers 3D utilisés le plus fréquement pour des éléments graphiques de **jeu vidéo et d'effets spéciaux**. Il permet le stockage d'un grand nombre de données, telles que la texture et l'armature animable (rig) d'un objet.
 
 Il est le plus souvent utilisé avec les applications **AutoDesk**, telles que 3DS Max ou encore Maya.
 
-A l'instar du format OBJ, les **contraintes de compatibilité** peuvent entrainer de légères différences entre le modèle de départ et le modèle importé. Il est donc recommandé de garder les textures du modèles dans un dossier complémentaire pour pouvoir les réimporter sur le modèle si besoin. 
+A l'instar du format .OBJ, les **contraintes de compatibilité** peuvent entrainer de légères différences entre le modèle de départ et le modèle importé. Il est donc recommandé de garder les textures du modèles dans un dossier complémentaire pour pouvoir les réimporter sur le modèle si besoin. 
 
 #### Caractéristiques détaillées de format .FBX
 
@@ -214,14 +224,16 @@ A l'instar du format OBJ, les **contraintes de compatibilité** peuvent entraine
 |Metadonnées| Oui|
 
 #### A Noter 
-Il vous ait possible d'ajouter des informations de matériau basique via l'édition d'objets de eCorpus. Un tutoriel sur ce sujet sera bientôt disponible.
+* Il vous ait possible d'ajouter des informations de matériau basique via l'édition d'objets de eCorpus. Un tutoriel sur ce sujet sera bientôt disponible.
 
-Un tutoriel avancé sur l'édition de modèles 3D sur Blender sera également bientôt disponible.
+* Un tutoriel avancé sur l'édition de modèles 3D sur Blender sera également bientôt disponible.
+
+* Le format .FBX est un <span style="text-decoration: underline dotted; cursor: help;" title="Son code ne peut-être lu qu'avec un logiciel compatible">**format proprietaire**</span>. Il est donc déconseillé d'avoir recourt à ce format.
 
 ### A partir d'un format DAE
 
 #### Le Collada (DAE)
-est un format de fichiers **aussi bien 2D que 3D**. Il peut contenir un large panel d'informations de textures et d'armature animable (rig), tout comme le FBX. 
+Un format de fichiers **aussi bien 2D que 3D**. Il peut contenir un large panel d'informations de textures et d'armature animable (rig), tout comme le FBX. 
 
 De par sa nature dite *libre d'utilisation*, ce format de fichier est conçu pour être **compatible avec le plus de plateformes possibles**.
 
@@ -235,14 +247,16 @@ De par sa nature dite *libre d'utilisation*, ce format de fichier est conçu pou
 |Metadonnées| Oui|
 
 #### A Noter 
-Il vous ait possible d'ajouter des informations de matériau basique via l'édition d'objets de eCorpus. Un tutoriel sur ce sujet sera bientôt disponible.
+* Il vous ait possible d'ajouter des informations de matériau basique via l'édition d'objets de eCorpus. Un tutoriel sur ce sujet sera bientôt disponible.
 
-Un tutoriel avancé sur l'édition de modèles 3D sur Blender sera également bientôt disponible.
+* Un tutoriel avancé sur l'édition de modèles 3D sur Blender sera également bientôt disponible.
+
+* Le format .DAE est un <span style="text-decoration: underline dotted; cursor: help;" title="Son code est lisible et reconnaissable par l'être humain">**format libre**</span>.
 
 ### A partir d'un format USD*
 
 #### Le Universal Scene Description (USD*)
-egalement appelé OpenUSD, est un format de fichiers 3D utilisé dans les rendus graphiques d'architectures, d'effets spéciaux et de CAD. Le format général USD est couramment suivi d'une '*' car il existe une **large variété d'encodage différents** du format (.usd, .usda, .usdc, .usdz, etc...).
+Egalement appelé OpenUSD, est un format de fichiers 3D utilisé dans les rendus graphiques d'architectures, d'effets spéciaux et de CAD. Le format général USD est couramment suivi d'une '*' car il existe une **large variété d'encodage différents** du format (.usd, .usda, .usdc, .usdz, etc...).
 
 Ce format peut contenir un large panel d'information et est couramment utilisé pour l'**édition collaborative** de scenes 3D.
 
@@ -256,15 +270,17 @@ Ce format peut contenir un large panel d'information et est couramment utilisé 
 |Metadonnées| Oui|
 
 #### A Noter 
-Il vous ait possible d'ajouter des informations de matériau basique via l'édition d'objets de eCorpus. Un tutoriel sur ce sujet sera bientôt disponible.
+* Il vous ait possible d'ajouter des informations de matériau basique via l'édition d'objets de eCorpus. Un tutoriel sur ce sujet sera bientôt disponible.
 
-Un tutoriel avancé sur l'édition de modèles 3D sur Blender sera également bientôt disponible.
+* Un tutoriel avancé sur l'édition de modèles 3D sur Blender sera également bientôt disponible.
+
+* Le format .USD* est un <span style="text-decoration: underline dotted; cursor: help;" title="Son code est lisible et reconnaissable par l'être humain">**format libre**</span>.
 
 ### Exporter son Modèle 3D en .GLB
 
-Le format GLTF (de nomenclature .glb) est un format permettant de stocker des ressources 3D complexes dans un fichier unique avec une portabilité maximale. C'est par conséquent le format le plus adapté pour un visionnage Web et Mobile. 
+Le format <span style="text-decoration: underline dotted; cursor: help;" title="Graphics Library Transmission Format">**glTF**</span> (de nomenclature .glb) est un format permettant de stocker des ressources 3D complexes dans un fichier unique avec une portabilité maximale. C'est par conséquent le format le plus adapté pour un visionnage Web et Mobile. 
 
-
+* Le format .glTF est un <span style="text-decoration: underline dotted; cursor: help;" title="Son code est lisible et reconnaissable par l'être humain">**format libre**</span>.
 
 #### Exporter son modèle 3D en GLB sur Blender
 
