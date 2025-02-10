@@ -81,11 +81,12 @@ Pour se faire, ils vous suffit d'aller dans vos paramètres utilisateurs, en cli
 Sur cette page, il vous est possible de changer votre nom d'utilisateur, l'adresse email associé à votre compte, ainsi que votre mot de passe.
 
 Vous trouverez également un bouton pour vous **déconnecter** en bas de page.
-## Vous souhaitez tester eCorpus
 
-Prenez contact avec l'équipe de eCorpus pour vous accompagner dans la mise en place d'un serveur eCorpus dédié.
+## Tester eCorpus
 
-FORMULAIRE DE CONTACT
+Prenez contact avec l'équipe de eCorpus pour vous accompagner dans la mise en place d'un serveur eCorpus dédié <hello@ecorpus.eu>
+
+
 
 
 ## En savoir plus

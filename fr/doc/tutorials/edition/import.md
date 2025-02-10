@@ -96,22 +96,22 @@ Cette option sert à gérer qui a le droit d'accèder à la scène. Dans la cat�
 Voyons d'abord les différents status de droit que vous pouvez attribuer à chacun des utilisateurs.
 <img src="/assets/img/doc/AdminSettings_01.jpg" width ="200" alt="illustration importation" />
 \
-*Aucun: Un utilisateur ayant ce droit ne pourra pas accèder à votre scène.
+* Aucun: Un utilisateur ayant ce droit ne pourra pas accèder à votre scène.
 
-*Lecture: Un utilisateur ayant ce droit aura accès au visualisateur de votre scène, mais ne pourra pas la modifier.
+* Lecture: Un utilisateur ayant ce droit aura accès au visualisateur de votre scène, mais ne pourra pas la modifier.
 
-*Ecriture: Un utilisateur ayant ce droit pourra voir et éditer votre scène 3D.
+* Ecriture: Un utilisateur ayant ce droit pourra voir et éditer votre scène 3D.
 
-*Admin: Un utilisateur ayant ce droit pourra voir, éditer, et changer les droit d'administrateur de cette scène.
+* Admin: Un utilisateur ayant ce droit pourra voir, éditer, et changer les droit d'administrateur de cette scène.
 
 \
 Maintenant, concentrons nous sur les différents utilisateurs listés:
 
-*Default: Concerne tous les visiteurs du lien, y compris les personnes non identifiées sur la base de donnée.
+* Default: Concerne tous les visiteurs du lien, y compris les personnes non identifiées sur la base de donnée.
 
 _Si votre scène est visible en public, nous vous conseillons de lui attribuer un droit "Lecture"_
 
-*Any: Concerne tous les membres ayant un compte sur votre base de donnée
+* Any: Concerne tous les membres ayant un compte sur votre base de donnée
 
 Vous pouvez ajouter un nom d'utilisateur pour lui donner des droits spécifiques. Il suffit d'écrire son nom d'utilisateur exacte et de cliquer sur Ajouter.
 
@@ -119,16 +119,6 @@ Vous pouvez ajouter un nom d'utilisateur pour lui donner des droits spécifiques
 Enfin, vous remarquerez la présence d'un historique en bas de la base. Il témoigne de chaque changement effectué sur la scène depuis sa création. 
 Si vous avez sauvegardé une mauvaise version de votre scène, vous pouvez restaurer une version précédente à cette modification en survolant une étape de l'historique et en cliquant sur "restaurer".
 <img src="/assets/img/doc/AdminSettings_02.jpg" width ="600" alt="illustration importation" />
-
-
-
-## A vous de jouer
-
-Intégration d'une scène eCorpus type
-
-## Aller plus loin
-
-Sommaire
 
 ## En savoir plus
 Si vous souhaitez en apprendre plus sur les fonctionnalités d'eCorpus, vous pouvez vous rendre sur ce guide: <a href="annotation">Créer des annotations</a>.

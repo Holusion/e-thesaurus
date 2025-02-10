@@ -62,9 +62,6 @@ Les modèles utilisent un système de PBR (*Physically Based Rendering*) permett
 
 
 
-
-
-
 ## Tester un modèle 3D
 
 **Modèle 3D** : Vous pouvez utiliser les modèles 3D en GLTF de démonstration sur [ce lien](https://github.com/KhronosGroup/glTF-Sample-Models).
@@ -303,7 +300,7 @@ Une fois le bouton d'export glTF cliqué, un pop-up apparaitra pour vous demande
 
 Voici les paramètres recommandés pour vos exports en GLB. 
 
-Tout d'abord, nous vous conseillons de cocher la case "Selected Object Only" pour être sûr de n'exporter que l'objet selectionné.
+Tout d'abord, nous vous conseillons de cocher la case **Selected Object Only** pour être sûr de n'exporter que l'objet selectionné.
 \
 Ensuite, dans "Data" et "Material" selectionnez le format "WebP" en compression 90 pour les textures.
 \
