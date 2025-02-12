@@ -21,11 +21,11 @@ rank: 1
 
 Pour fonctionner, un serveur eCorpus doit être mis en place. eCorpus est **décentralisé** et fonctionne sur des **instances indépendantes** les unes les autres pour garantir la pleine **souverainté des données** de chacun. **Les données restent interopérables** et peuvent être facilement échangées entre utilisateurs.
 
-* Pour **créer votre propre serveur eCorpus**, vous pouvez vous reporter à la section : <a href="deployment">Installation d'un serveur eCorpus</a>.
+* Pour **créer votre propre serveur eCorpus**, vous pouvez vous reporter à la section : <a href="../../guides/deployment">Installation d'un serveur eCorpus</a>.
 
 Si votre organisation possède un serveur eCorpus, rapprochez-vous de votre référend ou un administateur pour la création de votre compte.
 
-* **Si vous êtes administateur** d'une instance eCorpus, vous pouvez consulter le tutoriel : <a href="administration">Administrer un serveur eCorpus</a>.
+* **Si vous êtes administateur** d'une instance eCorpus, vous pouvez consulter le tutoriel : <a href="../../guides/administration">Administrer un serveur eCorpus</a>.
 
 ### Connexion à votre compte
 

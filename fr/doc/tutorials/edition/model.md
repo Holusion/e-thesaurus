@@ -26,11 +26,11 @@ Ce format est libre, il est défini par le Consotirum Khronos. Sa documentation 
 
     * [Standfort PLY (.PLY)](#a-partir-dun-format-ply)
 
-    * [FBX (.FBX)](#fbx)
+    * [FBX (.FBX)](#a-partir-dun-format-fbx)
 
-    * [Collada (.DAE)](#dae)
+    * [Collada (.DAE)](#a-partir-dun-format-dae)
 
-    * [Univ. Scene Desc.(.USD*)](#usd)
+    * [Univ. Scene Desc.(.USD*)](#a-partir-dun-format-usd)
 
 * [Exporter son modèle en GLB](#exporter-son-modèle-3d-en-glb)
 
