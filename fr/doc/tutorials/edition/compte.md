@@ -14,7 +14,7 @@ rank: 1
 * [Votre Compte eCorpus](#votre-compte-ecorpus-1)
     * [Charger un modèle 3D sur votre compte eCorpus](#charger-un-modèle-3d-sur-votre-compte-ecorpus)
     * [Récupération de mot de passe](#récupération-de-mot-de-passe)
-* [Contact](#vous-souhaitez-tester-ecorpus)
+* [Contact](#tester-ecorpus)
 * [En savoir plus](#en-savoir-plus)
 
 ### URL et accès à votre base de donnée
@@ -77,7 +77,8 @@ Une fois cliqué, il vous suffira de rentrer, soit votre identifiant eCorpus, so
 
 Pour se faire, ils vous suffit d'aller dans vos paramètres utilisateurs, en cliquant sur votre nom d'utilisateur en haut à droite de la page.
 <img src="/assets/img/doc/Account_Connect_03.jpg" width ="800"  alt="illustration connexion"/>
-\
+
+
 Sur cette page, il vous est possible de changer votre nom d'utilisateur, l'adresse email associé à votre compte, ainsi que votre mot de passe.
 
 Vous trouverez également un bouton pour vous **déconnecter** en bas de page.
@@ -91,3 +92,6 @@ Prenez contact avec l'équipe de eCorpus pour vous accompagner dans la mise en p
 
 ## En savoir plus
 Si vous souhaitez en apprendre plus sur les fonctionnalités d'eCorpus, vous pouvez vous rendre sur ce guide: <a href="model">Préparer son modèle 3D</a>.
+
+
+* [Revenir en haut de la page](#votre-compte-ecorpus)

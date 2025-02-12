@@ -309,3 +309,6 @@ Puis, cochez la case "Compression" pour alléger encore plus votre modèle.
 
 ## En savoir plus
 Si vous souhaitez en apprendre plus sur les fonctionnalités d'eCorpus, vous pouvez vous rendre sur ce guide: <a href="import">Importer son modèle dans une scène eCorpus</a>.
+
+
+* [Revenir en haut de la page](#votre-compte-ecorpus)
