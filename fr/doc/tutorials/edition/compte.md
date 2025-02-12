@@ -21,7 +21,7 @@ rank: 1
 
 Pour fonctionner, un serveur eCorpus doit être mis en place. eCorpus est **décentralisé** et fonctionne sur des **instances indépendantes** les unes les autres pour garantir la pleine **souverainté des données** de chacun. **Les données restent interopérables** et peuvent être facilement échangées entre utilisateurs.
 
-* Pour **créer votre propre serveur eCorpus**, vous pouvez vous reporter à la section : Installation d'un serveur eCorpus.
+* Pour **créer votre propre serveur eCorpus**, vous pouvez vous reporter à la section : <a href="deployment">Installation d'un serveur eCorpus</a>.
 
 Si votre organisation possède un serveur eCorpus, rapprochez-vous de votre référend ou un administateur pour la création de votre compte.
 
@@ -33,14 +33,14 @@ Chaque instance eCorpus est indépendante et dédié à une instution. Pour vous
 
 <img src="/assets/img/doc/Account_Connect_01.jpg" width ="700" alt="illustration connexion"/>
 
-Arrivé sur l'URL de votre base de donnée eCorpus, il vous suffit de **rentrer vos identifiants** dans les espaces prévus à cet effet pour vous connecter. Vous pouvez également cliquer sur le bouton "**Connexion**" en haut à droite.
+Arrivé sur l'URL de votre base de donnée eCorpus, il vous suffit de **rentrer vos identifiants** dans les espaces prévus à cet effet pour vous connecter. Vous pouvez également vous connecter directement via un lien de connexion fourni par votre administrateur.
 * Si vous ne vous rappelez plus de vos identifiants, vous pouvez cliquer sur le lien "**mot de passe oublié**" pour recevoir un mail de connexion à votre compte.
 
 <img src="/assets/img/doc/Account_Connect_02.jpg" width ="700" alt="illustration connexion"/>
 
 Une fois connecté, vous aurez accès aux scènes 3D que vous avez créées, ainsi que celles ayant été partagées avec vous par d'autres utilisateurs.
 
-Vous remarquerez que votre nom d'utilisateur s'affiche tout en haut à droite de la page. Cliquez dessus pour accèder aux **paramètres de votre profil utilisateur**. Vous pourrez y modifier votre nom d'utilisateur, votre adresse email associée au compte, changer votre mot de passe et vous déconnecter.
+Vous remarquerez que votre nom d'utilisateur s'affiche tout en haut à droite de la page. Cliquez dessus pour accèder aux **paramètres de votre profil utilisateur**. Vous pourrez y modifier votre nom d'utilisateur, votre adresse email associée au compte, changer votre mot de passe, accèder à vos scènes archivées et vous déconnecter.
 
 ## Votre compte eCorpus
 
@@ -55,11 +55,11 @@ Vous trouverez un onglet "**Tools**" en haut à gauche dans lequel s'imbrique 3 
 
 <img src="/assets/img/doc/SceneCreation_06.jpg" width ="100%" alt="paramètre création de scène" />
 
-Une fois rendu, cliquer sur le bouton "**Choisir un fichier**". Un pop-up apparaîtra vous demandant de sélectionnier dans vos documents le fichiers à téléverser sur la base de données.
+Une fois rendu, cliquez sur le bouton "**Choisir un fichier**". Un pop-up apparaîtra vous demandant de sélectionnier dans vos documents le fichiers à téléverser sur la base de données.
 
 * *Vous pouvez également glisser déposer le fichier à téléverser directement sur l'onglet*
 
-Enfin, nommer votre scène (ce nom sera directement visible dans l'URL, par conséquent, veuillez éviter les caractères spéciaux), sélectionner la langue par défaut de votre, et cliquer sur le bouton "**créer une scène**" pour lancer l'import de votre modèle 3D dans la base de données.
+Enfin, nommez votre scène (ce nom sera directement visible dans l'URL, par conséquent, veuillez éviter les caractères spéciaux), sélectionner la langue par défaut de votre, et cliquer sur le bouton "**créer une scène**" pour lancer l'import de votre modèle 3D dans la base de données.
 
 
 * Seule l'extension .glb est utilisable sur l'editeur eCorpus. Pour apprendre à exporter un modèle en .glb, veuillez vous réferrer à ce guide: <a href="model">Préparer son modèle 3D</a>.
