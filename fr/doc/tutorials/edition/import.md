@@ -25,7 +25,6 @@ eCorpus est un **logiciel libre** permettant de conserver, annoter et diffuser d
     * [Les contrôles de base](#les-contrôles-de-base)
     * [Créer une image de miniature](#créer-une-image-de-miniature)
     * [Recentrer un objet dans la scène](#centrer-son-modèle-automatiquement)
-* [Contact](#vous-souhaitez-tester-ecorpus)
 * [En savoir plus](#en-savoir-plus)
 
 

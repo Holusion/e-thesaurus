@@ -3,9 +3,21 @@ title: Ajouter des Visites Guidées
 rank: 6
 ---
 
+## Ajouter une ligne directrice à l'experience
+
+Les visites guidées des scènes eCorpus sont le parfait outil pour offrir une ligne directrice à vos sujets. Grâce à lui, vous pourrez mettre en lumière, non seulement vos articles et vos annotations dans l'ordre désiré, mais aussi dynamiser et orienter la lecture de la scène en présentant des points de vus précis d'un ou plusieurs objets.
+
 ## Présentation des visites guidées
 
 <iframe src="https://pod.univ-lille.fr/video/40137-creation-dune-visite-guidee-sur-ecorpus/?is_iframe=true" width="800" height="450" style="padding: 0; margin: 0; border:0" allowfullscreen title="Création d'une visite guidée sur eCorpus" ></iframe>
+
+
+### Sommaire
+
+* [Comprendre l'outil](#comprendre-ce-quest-une-visite-guidée)
+* [Créer une visite guidée](#créer-une-visite-guidée)
+* [Ajouter des étapes à sa visite](#ajouter-des-étapes-à-sa-visite)
+* [En savoir plus](#en-savoir-plus)
 
 ## Comprendre ce qu'est une visite guidée
 
@@ -67,3 +79,13 @@ Si vous souhaitez changer ou mettre à jour un état montré dans une étape, cl
 Ce bouton correspond a un bouton de sauvegarde.
 
 eCorpus crée automatiquement des transitions entre les différentes étapes. La durée de ces transitions peuvent être modifiés dans le paramètre **Duration** tout à droite. La valeur de ce paramètre est unique à chaque étape.
+
+## En savoir plus
+
+Vous venez à bout des tutoriels vous apprenant les bases d'eCorpus, félicitations !
+
+Les possibilités qu'offrent eCorpus sont nombreuses, et n'ont pas toutes été citées. Une catégorie de guides avancés vous attendent pour en découvrir encore plus.
+
+Apprenez-en plus sur les possibilités de visites guidées en suivant ce guide avancé: GUIDE A VENIR
+
+* [Revenir en haut de la page](#ajouter-une-ligne-directrice-à-lexperience)
