@@ -210,4 +210,4 @@ Un tutoriel avancé sur l'édition du point de pivot de votre objet sera bientô
 Si vous souhaitez en apprendre plus sur les fonctionnalités d'eCorpus, vous pouvez vous rendre sur ce guide: <a href="annotation">Créer des annotations</a>.
 
 
-* [Revenir en haut de la page](#votre-compte-ecorpus)
+* [Revenir en haut de la page](#prise-en-main-decorpus)
